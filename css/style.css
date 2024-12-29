@@ -1,0 +1,231 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--black-bg);
+}
+body,
+html {
+  overflow-x: hidden;
+}
+:root {
+  --white-color: #fff;
+  --main-color: #009ad8;
+  --black-bg: #1e202b;
+  --sec-color: #bfc1c8;
+  --card-bg: #323544;
+  --card-heading: #2d303d;
+  --card-middle: #262936;
+  --card-heading-middle: #222530;
+}
+h1 {
+  margin-bottom: 0.3125rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+h4 {
+  font-size: 0.875rem;
+  color: var(--sec-color);
+}
+h5.card-title {
+  font-size: 1.125rem;
+  color: var(--sec-color);
+}
+
+/* *navbar* */
+
+.navbar {
+  background-color: var(--black-bg);
+}
+.navbar i {
+  color: var(--white-color);
+}
+.navbar button:focus i {
+  color: var(--main-color);
+}
+nav .navbar-brand img {
+  margin-right: 0.625rem;
+  width: 4rem;
+}
+nav .navbar-brand span {
+  color: var(--sec-color);
+  font-size: 0.625rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 0.875rem;
+  padding: 5px 25px;
+}
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+
+.nav-link {
+  border-radius: 30px;
+  border: 2px solid transparent;
+
+  color: var(--white-color);
+  transition: all 0.3s;
+}
+.nav-link:focus {
+  outline: thin dotted;
+  color: var(--white-color);
+}
+/* *header* */
+
+header .header-top {
+  background-image: url(../assets/banner.png);
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 21.875rem;
+}
+
+header .header-top .container {
+  padding-top: 4.375rem;
+}
+.form-control {
+  font-size: 14px;
+  background-color: var(--black-bg);
+  border: transparent;
+  padding: 1.25rem;
+}
+.input-group .btn {
+  z-index: 5;
+  font-size: 0.875rem;
+}
+.input-group .btn:hover {
+  background-color: var(--main-color);
+}
+.btn-outline-secondary {
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  padding: 0 2.5rem;
+  background-color: var(--main-color);
+}
+.form-control::placeholder {
+  color: #bfc1c86d;
+}
+
+.form-control:focus {
+  color: var(--white-color);
+  background-color: var(--black-bg);
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:not(:focus) {
+  color: var(--white-color);
+  background-color: var(--black-bg);
+}
+main .row {
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+header .header-bottom {
+  background-color: var(--black-bg);
+}
+.img-90 {
+  width: 5.625rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+}
+.card-body {
+  padding: 1.875rem 1.25rem;
+}
+
+.temp {
+  font-size: 5.625rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+.card .date {
+  padding: 10px;
+  background-color: var(--card-heading);
+}
+h6 {
+  color: var(--main-color);
+}
+img.icon {
+  width: 1.3125rem;
+  margin-right: 0.3125rem;
+}
+.card-body span {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--sec-color);
+}
+.icons > span {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+.middle .date {
+  background-color: var(--card-heading-middle);
+}
+.middle .card-body {
+  background-color: var(--card-middle);
+}
+.header-top .row {
+  margin-top: 4.375rem;
+}
+footer {
+  padding: 50px 0;
+  background-color: var(--card-middle);
+}
+.icons li {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgb(30, 32, 43);
+  transition: all 0.5s;
+}
+.icons a {
+  color: var(--main-color);
+  font-size: 1.25rem;
+  transition: all 0.5s;
+}
+.icons li:hover {
+  background-color: var(--main-color);
+}
+.icons li:hover a {
+  color: var(--white-color);
+}
+footer .btn {
+  padding: 0.625rem 1.25rem;
+}
+footer p {
+  color: var(--sec-color);
+}
+.img-48 {
+  width: 3rem;
+  margin-bottom: 1.25rem;
+}
+.first-card {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.third-card {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.third-card .date {
+  background-color: var(--card-heading);
+}
+.third-card .card-body {
+  background-color: var(--card-bg);
+}
+.col-lg-4 {
+  padding: 0;
+}
